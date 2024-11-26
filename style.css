@@ -1,0 +1,191 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #444;
+  color: white;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #444;
+  text-align: center;
+  font-size: 1.8em;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+/* Product Grid */
+#products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product p {
+  color: #888;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Contact Info */
+#contact iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#contact p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #444;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  #products-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product img {
+    max-height: 200px;
+  }
+}
+
+/* Top Header Section */
+.top-header {
+  display: flex;
+  justify-content: space-between; /* Logo on the left, header text on the right */
+  align-items: center; /* Vertically aligns both logo and text */
+  padding: 10px 20px;
+  background-color: #333; /* Dark background */
+  color: white;
+}
+
+.top-header .logo img {
+  width: 80px; /* Adjust the logo size */
+  height: auto;
+}
+
+.top-header .header-text {
+  text-align: right; /* Align header text to the right */
+}
+
+.top-header .header-text h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.top-header .header-text p {
+  font-size: 1rem;
+  margin: 5px 0 0;
+}
+
+/* Top Navigation Bar */
+.top-menu {
+  background-color: #444; /* Slightly lighter background */
+  padding: 10px 0;
+}
+
+.top-menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu ul li {
+  margin: 0 15px;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.top-menu ul li a:hover {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
